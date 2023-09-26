@@ -1,69 +1,89 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import profilePic from './assets/profilePic.jpg'
+import projectOne from './assets/capture.png'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
 
-      <img src={profilePic} alt="" width="200" height="200"></img>
-
+      <img src={profilePic} className="rounded-5" alt="" width="200" height="200"></img>
       <h1>Cynthia Huertas</h1>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
+      <ul className="navbar-nav ms-auto">
       <li className="nav-item">
-      <a className="nav-link active" aria-current="page" href="#">About Me</a>
+      <a className="nav-link active" aria-current="page" href="#about_me">About Me</a>
       </li>
       <li className="nav-item">
-      <a className="nav-link" href="#">My Work</a>
+      <a className="nav-link" href="#my_work">My Work</a>
       </li>
       <li className="nav-item">
-      <a className="nav-link" href="#">Contact Me</a>
+      <a className="nav-link" href="#contact_me">Contact Me</a>
       </li>
       </ul>
       </div>
       </div>
     </nav>
+    <div className="container">
+    <div className="col">
+    <div className="row">
+      About Me
+      <div className="col">Welcome! I am a Full Stack Web Developer</div>
+    </div>
+    <div className="row">
+    My Work
+    <div className="col">
+      <div class="card" style={{width: "18rem"}}>
+      <img src={projectOne} className="card-img-top" alt="..."></img>
+        <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" className="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
     
-    <main className="main-content">
+    <div className="col">
+      <div class="card" style={{width: "18rem"}}>
+      <img src={projectOne} className="card-img-top" alt="..."></img>
+        <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" className="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+      
+    <div className="col">
+      <div class="card" style={{width: "18rem"}}>
+      <img src={projectOne} className="card-img-top" alt="..."></img>
+        <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" className="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+   
+    </div>
+  </div>
+  <div className="row">
+    Contact Me
+    <div className="col">Email</div>
+    <div className="col">Phone</div>
+    <div className="col">Github</div>
+    </div>
+    </div>
 
-    <section className = "captions about-me">About Me</section>
-            <section className="description1 amb2">Welcome! I am a Full Stack Web Developer </section>
-    
-            <section className="captions my-work">My Work</section>
-            
-            <a href="https://github.com/cdziedzic/Project-1" className="image-links1 mw1">
-                    <h2>Nebula Narrative - a quirky poster generator</h2>
-                    <img src="./assets/Capture.PNG" alt="poster with quote"></img>
-            </a>
-
-            <a href="https://github.com/CyndiCodes/HorisoenSemanticHMTLupdate" className="image-links2 mw2">
-                    <h2>second application</h2>
-                    <img src="./assets/githubphoto.PNG" alt="placeholder image"></img>
-            </a>
-
-            <a href="https://github.com/CyndiCodes/cyndis_portfolio"className="image-links2 mw3">
-                    <h2>third application</h2>
-                    <img src="assets/images/githubphoto.PNG" alt="placeholder image"></img>
-            </a>
-
-            <section className="captions contact-me">Contact Me</section>
-            <section className="description2 cm1">
-                <h2>phone</h2>
-                <h2>email</h2>
-                <h2>website</h2>
-            </section>
-
-    </main>
+   
     </>
   )
 }
