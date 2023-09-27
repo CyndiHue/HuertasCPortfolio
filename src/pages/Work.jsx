@@ -1,4 +1,4 @@
-import projectOne from '../assets/capture.png'
+import projectOne from '../assets/capture.jpg'
 
 export default function Work() {
     return (
