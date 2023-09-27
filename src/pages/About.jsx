@@ -3,14 +3,14 @@ import profilePic from '../assets/profilePic.jpg'
 
 export default function About() {
     return (
-        <div className="row">
+        <>
+        
+        <div className="row">About Me</div>
+        <img src={profilePic} className="row profile rounded-5" alt="" style={{width: "200px"}}></img>
+        <div className="row">Welcome! I am a Full Stack Web Developer looking to showcase my most recent work. If you click the Work link above you will find links to a few projects of mine. You may also contact me directly via email by clicking Contact Me tab. Thank you for checking out my work and I hope you enjoy!</div>
+        
+        </>
 
-
-        <div className="col">About Me
-        <img src={profilePic} className="col profile rounded-5" alt="" style={{width: "200px"}}></img></div>
-        <div className="row">Welcome! I am a Full Stack Web Developer. I create dynamic websites that focus both on front and back end development. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
-   
-        </div>
-    );
+        );
   }
   
