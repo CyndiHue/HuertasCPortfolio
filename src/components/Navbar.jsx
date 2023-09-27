@@ -1,15 +1,15 @@
 import { Link, useLocation } from 'react-router-dom';
-import profilePic from '../assets/profilePic.jpg'
+
 
 function Navbar() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="nav navbar">
-    <img src={profilePic} className="rounded-5" alt="" width="200" height="200"></img>
+    <ul className="nav navbar ">
+    
     <h1>Cynthia Huertas</h1>
     
-      <li className="nav-item">
+      <li className="nav-item ms-auto">
         <Link
           to="/About"
           className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
