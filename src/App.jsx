@@ -2,14 +2,21 @@ import { useState } from 'react'
 import './App.css'
 import profilePic from './assets/profilePic.jpg'
 import projectOne from './assets/capture.png'
-
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-    <nav className="navbar navbar-expand-lg">
+      <>
+      <Navbar />
+      <main className="mx-3">
+        <Outlet />
+        
+      </main>
+    </>
+    {/* <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
 
       <img src={profilePic} className="rounded-5" alt="" width="200" height="200"></img>
@@ -34,54 +41,11 @@ function App() {
     </nav>
     <div className="container">
     <div className="col">
-    <div className="row">
-      About Me
-      <div className="col">Welcome! I am a Full Stack Web Developer</div>
-    </div>
-    <div className="row">
-    My Work
-    <div className="col">
-      <div class="card" style={{width: "18rem"}}>
-      <img src={projectOne} className="card-img-top" alt="..."></img>
-        <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    
-    <div className="col">
-      <div class="card" style={{width: "18rem"}}>
-      <img src={projectOne} className="card-img-top" alt="..."></img>
-        <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-      
-    <div className="col">
-      <div class="card" style={{width: "18rem"}}>
-      <img src={projectOne} className="card-img-top" alt="..."></img>
-        <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-   
-    </div>
+  
+
   </div>
-  <div className="row">
-    Contact Me
-    <div className="col">Email</div>
-    <div className="col">Phone</div>
-    <div className="col">Github</div>
-    </div>
-    </div>
+  
+    </div> */}
 
    
     </>
