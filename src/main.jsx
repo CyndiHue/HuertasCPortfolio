@@ -11,6 +11,8 @@ import Contact from './pages/Contact';
 import Error from './pages/Error';
 import Resume from './pages/Resume';
 
+import { Link, useLocation } from 'react-router-dom';
+
 const router =createBrowserRouter([
   {
     path: '/',
@@ -36,6 +38,7 @@ const router =createBrowserRouter([
     ],
   },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />

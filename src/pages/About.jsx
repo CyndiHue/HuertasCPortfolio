@@ -1,6 +1,5 @@
 import profilePic from '../assets/profilePic.jpg'
 
-
 export default function About() {
     return (
         <>

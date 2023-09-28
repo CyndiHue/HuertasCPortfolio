@@ -12,7 +12,7 @@ export default function Work() {
       <div className="row">
      
       <div className="col">
-          <a href="#">
+          <a href="https://travel-tracker-msc-0fe902780013.herokuapp.com/">
         <div className="card" style={{width: "18rem"}}>
         <img src={projectTwo} className="card-img-top" alt="..."></img>
           <div className="card-body">
@@ -25,7 +25,7 @@ export default function Work() {
       </div>
       
       <div className="col">
-          <a href="#">
+          <a href="https://cdziedzic.github.io/Nebula-Narratives/">
         <div className="card" style={{width: "18rem"}}>
         <img src={projectOne} className="card-img-top" alt="..."></img>
           <div className="card-body">
@@ -38,7 +38,7 @@ export default function Work() {
       </div>
         
       <div className="col">
-          <a href="#" >
+          <a href="https://cyndicodes.github.io/getTheWeather/" >
         <div className="card" style={{width: "18rem"}}>
         <img src={weatherApp} className="card-img-top" alt="..."></img>
           <div className="card-body">
