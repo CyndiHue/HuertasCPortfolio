@@ -1,6 +1,7 @@
 import projectOne from '../assets/posterCreation.jpg'
 import projectTwo from '../assets/travelTracker.jpg'
 import weatherApp from '../assets/weatherApp.jpg'
+import projectThree from '../assets/project3.jpg'
 
 
 export default function Work() {
@@ -51,9 +52,9 @@ export default function Work() {
       </div>
      
       <div className="col">
-          <a href="#" >
+          <a href="https://project-3-app-mck-b96b86dfcabe.herokuapp.com/" >
         <div className="card" style={{width: "18rem"}}>
-        <img src={weatherApp} className="card-img-top" alt="..."></img>
+        <img src={projectThree} className="card-img-top" alt="..."></img>
           <div className="card-body">
           <h5 className="card-title">Card title</h5>
           <p className="card-text">Get the weather app</p>
