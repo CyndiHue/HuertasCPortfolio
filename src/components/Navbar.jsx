@@ -1,4 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
+import gitHubLogo from '../assets/gitHubLogo.jpg'
+import linkedInLogo from '../assets/linkedInLogo.jpg'
+
 
 function Navbar() {
   const currentPage = useLocation().pathname;
@@ -18,6 +21,7 @@ function Navbar() {
   };
 
   return (
+    <>
     <ul className="nav navbar">
       <h1>Cynthia Huertas</h1>
       <li className="nav-item ms-auto">
@@ -56,7 +60,21 @@ function Navbar() {
           Resume
         </Link>
       </li>
+      
     </ul>
+    <nav className="row navbar ">
+  <div className="container  d-flex justify-content-end">
+    <a className="navbar-brand" href="https://github.com/CyndiCodes">
+      <img src={gitHubLogo} alt="" width="30" height="24"></img>
+    </a>
+   
+    <a className="navbar-brand mx-4" href="https://www.linkedin.com/in/cyndi-codes-090498288/">
+      <img src={linkedInLogo} alt="" width="30" height="24"></img>
+    </a>
+  
+  </div>
+</nav>
+    </>
   );
 }
 export default Navbar;

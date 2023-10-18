@@ -4,9 +4,13 @@ export default function About() {
     return (
         <>
         
-        <div className="text-center">
-      <div className="row">About Me</div>
+    <div className="text-center">
       <img src={profilePic} className="row profile rounded-5 mx-auto" alt="" style={{ width: "400px" }}></img>
+      <div className="row mb-4">
+        <p>About Me
+        </p>
+        
+        </div>
       <div className="row mb-4">
         <p>Cyndi</p>
         <p>Full Stack Web Developer</p>
