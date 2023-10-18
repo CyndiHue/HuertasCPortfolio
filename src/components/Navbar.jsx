@@ -4,17 +4,17 @@ function Navbar() {
   const currentPage = useLocation().pathname;
 
   const linkStyle = {
-    color: 'white', // Set the link color to white
-    textDecoration: 'none', // Remove the default underline
+    color: 'white',
+    textDecoration: 'none', 
   };
 
   const activeLinkStyle = {
     color: 'white',
-    borderBottom: '2px solid white', // Add a white underline on active links
+    borderBottom: '2px solid white',
   };
 
   const hoverLinkStyle = {
-    borderBottom: '2px solid white', // Add a white underline on hover
+    color: 'red' 
   };
 
   return (
