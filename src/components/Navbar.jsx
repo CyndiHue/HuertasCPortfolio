@@ -1,10 +1,18 @@
 import { Link, useLocation } from 'react-router-dom';
 import gitHubLogo from '../assets/gitHubLogo.jpg'
-import linkedInLogo from '../assets/linkedInLogo.jpg'
+import linkedInLogo from '../assets/linkedInLogo.jpg' 
+import '../../index.html';
+import '../App.css';
 
 
 function Navbar() {
   const currentPage = useLocation().pathname;
+  const glowTextStyle = {
+    color: 'white',
+    textShadow: '0 0 10px #AFB3F7',
+  };
+
+
 
   const linkStyle = {
     color: 'white',
@@ -23,7 +31,7 @@ function Navbar() {
   return (
     <>
     <ul className="nav navbar">
-      <h1>Cynthia Huertas</h1>
+      <h1 className="navbarCustomText glow-text">Cynthia Huertas</h1>
       <li className="nav-item ms-auto">
         <Link
           to="/About"
