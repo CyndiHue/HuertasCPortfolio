@@ -5,8 +5,8 @@ import linkedInLogo from '../assets/linkedInLogo.jpg'
 function Footer() {
     return (
    <>
-   <nav className="row navbar bg-body-tertiary mx-2">
-  <div className="container  d-flex justify-content-center">
+  <nav className="row navbar bg-body-tertiary">
+  <div className="container  d-flex justify-content-end">
     <a className="navbar-brand" href="https://github.com/CyndiCodes">
       <img src={gitHubLogo} alt="" width="30" height="24"></img>
     </a>

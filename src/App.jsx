@@ -12,11 +12,11 @@ function App() {
     <>
       
       <Navbar />
+      <Footer />
       <main className="mx-3">
         <Outlet />
         
       </main>
-      <Footer />
     </>
   )
 }
