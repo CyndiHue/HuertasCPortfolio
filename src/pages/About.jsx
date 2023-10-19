@@ -12,17 +12,13 @@ export default function About() {
         </div>
         <div className="col-lg-8">
           <div className="mb-4">
-            <p>About Me</p>
+            <p>Hello, I also go by </p>
             <p className="nameCustomText">Cyndi</p>
-            <p>Full Stack Web Developer</p>
+            <p>I am a certified Full Stack Web Developer</p>
           </div>
           </div>
           </div>
-          <div className="text-center mb-4">
-            <p>
-              Hi! I am a Web Developer looking to showcase my most recent work. If you click the Work link above, you will find links to a few projects of mine. You may also contact me directly via email by clicking the Contact Me tab. Thank you for checking out my work, and I hope you enjoy!
-            </p>
-          </div>
+        
           <div className="mb-4">
             <p>Skills</p>
             <p></p>

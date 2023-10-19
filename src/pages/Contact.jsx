@@ -1,13 +1,13 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
-function ContactForm() {
+export default function ContactForm() {
   const [state, handleSubmit] = useForm("mrgwrwon");
   if (state.succeeded) {
       return <p>Thanks for joining!</p>;
   }
   return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="row">
       <label htmlFor="email">
         Email Address
       </label>
@@ -21,6 +21,9 @@ function ContactForm() {
         field="email"
         errors={state.errors}
       />
+      <label htmlFor="message" className="row">
+        Message
+      </label>
       <textarea
         id="message"
         name="message"
@@ -36,9 +39,4 @@ function ContactForm() {
     </form>
   );
 }
-function App() {
-  return (
-    <ContactForm />
-  );
-}
-export default App;
+
