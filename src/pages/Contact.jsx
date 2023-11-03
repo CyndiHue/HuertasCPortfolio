@@ -7,6 +7,8 @@ export default function ContactForm() {
       return <p>Thanks for joining!</p>;
   }
   return (
+    <div className="card" style={{ marginTop: '20px' }}>
+  
       <form onSubmit={handleSubmit} className="row">
       <label htmlFor="email">
         Email Address
@@ -15,6 +17,8 @@ export default function ContactForm() {
         id="email"
         type="email" 
         name="email"
+        className="rounded-input"
+        
       />
       <ValidationError 
         prefix="Email" 
@@ -27,16 +31,18 @@ export default function ContactForm() {
       <textarea
         id="message"
         name="message"
+        className="rounded-input"
       />
       <ValidationError 
         prefix="Message" 
         field="message"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting}>
+      <button type="submit" disabled={state.submitting} className="rounded-button">
         Submit
       </button>
     </form>
+    </div>
   );
 }
 

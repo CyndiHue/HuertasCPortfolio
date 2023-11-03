@@ -70,13 +70,13 @@ function Navbar() {
       </li>
       
     </ul>
-    <nav className="row navbar ">
+    <nav className="nav navbar ">
   <div className="container  d-flex justify-content-end">
-    <a className="navbar-brand" href="https://github.com/CyndiCodes">
+    <a className="navbar-brand" href="https://github.com/CyndiHue">
       <img src={gitHubLogo} alt="" width="30" height="24"></img>
     </a>
    
-    <a className="navbar-brand mx-4" href="https://www.linkedin.com/in/cyndi-codes-090498288/">
+    <a className="navbar-brand mx-4" href="https://www.linkedin.com/in/cynthia-huertas-090498288/">
       <img src={linkedInLogo} alt="" width="30" height="24"></img>
     </a>
   
