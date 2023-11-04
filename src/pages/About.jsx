@@ -1,12 +1,14 @@
 import profilePic from '../assets/profilePic.jpg'
 import '../../index.html';
 
-
+const styles = {
+  paddingBottom: '20px', 
+};
 export default function About() {
     return (
         <>
         
-      <div className="row  mt-4">
+      <div className="row  mt-4" style={styles}>
         <div className="col-lg-4">
           <img src={profilePic} className="profile rounded-5 mx-auto" alt="" style={{ width: "350px" }}></img>
         </div>

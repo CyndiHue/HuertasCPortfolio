@@ -7,7 +7,7 @@ import projectThree from '../assets/project3.jpg'
 export default function Work() {
     return (
       <>
-      <div className="row">
+      <div className="row  mt-4">
 
       </div>
       <div className="container">
