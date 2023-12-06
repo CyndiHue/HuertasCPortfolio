@@ -1,5 +1,5 @@
 import profilePic from '../assets/profilePic.jpg'
-import '../../index.html';
+
 
 const styles = {
   paddingBottom: '20px', 
