@@ -35,7 +35,7 @@ function Navbar() {
       <li className="nav-item ms-auto">
         <Link
           to="/About"
-          className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === '/About' ? 'nav-link active' : 'nav-'}
           style={currentPage === '/About' ? activeLinkStyle : linkStyle}
         >
           About
@@ -45,7 +45,7 @@ function Navbar() {
         <Link
           to="/Work"
           className={currentPage === '/Work' ? 'nav-link active' : 'nav-link'}
-          style={currentPage === '/Work' ? activeLinkStyle : linkStyle}
+          style={currentPage === '/Work' ? activeLinkStyle : Style}
         >
           Work
         </Link>
