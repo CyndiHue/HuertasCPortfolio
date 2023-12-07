@@ -1,6 +1,8 @@
 export default function Resume() {
     return (
         <>
+        <div className="card" style={{ marginTop: '20px', marginLeft: '100px', marginRight: '100px'}}>
+        
         <div className="mt-4">
             <h2>Education: </h2>
             <p>Associate in Arts: Business General, Community College of Philadelphia </p>
@@ -47,20 +49,10 @@ customer service phone representative  30-60 incoming/outgoing calls daily</p>
             <p>Worked directly with client base: built relationships and client funnels (30-50 clients)</p>
             <p>Trained new employees </p>
 
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
-        </>
+    </div>    
+    </div>
+   
+    </>
 
         );
   }

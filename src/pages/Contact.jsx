@@ -7,9 +7,9 @@ export default function ContactForm() {
       return <p>Thanks for joining!</p>;
   }
   return (
-    <div className="card" style={{ marginTop: '20px' }}>
+    <div className="card" style={{ marginTop: '20px', marginLeft: '100px', marginRight: '100px'}}>
   
-      <form onSubmit={handleSubmit} className="row mt-4">
+      <form onSubmit={handleSubmit} className="row mb-4">
       <label htmlFor="email">
         Email Address
       </label>
