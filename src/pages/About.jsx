@@ -16,8 +16,10 @@ export default function About() {
           <div className="mb-4">
             <p>Hello, I also go by </p>
             <p className="nameCustomText">Cyndi Hue</p>
-            <p>I am a certified Full Stack Web Developer with both a focus on the frontend UI/UX for ease of user experience and backend database setup.</p>
-          </div>
+            <p>I am a certified Full Stack Web Developer </p>
+            <p>with a focus on backend database setup.</p>
+            <p>See the Work link above to see examples.</p>
+         </div>
           </div>
           </div>
         
