@@ -3,10 +3,18 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
   const currentPage = useLocation().pathname;
+  const activeLinkStyle = {
+    color: 'white',
+    borderBottom: '2px solid white',
+  };
+  const linkStyle = {
+    color: 'white',
+    textDecoration: 'none', 
+  };
 
   return (
     
-    <ul className="nav navbar ">
+    <ul className="nav navbar glow-text">
     
     <h1>Cynthia Huertas</h1>
     
@@ -14,6 +22,7 @@ function Navbar() {
         <Link
           to="/About"
           className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
+          style={currentPage === '/About' ? activeLinkStyle : linkStyle}
         >
           About
         </Link>
