@@ -31,6 +31,7 @@ function Navbar() {
         <Link
           to="/Work"
           className={currentPage === '/Work' ? 'nav-link active' : 'nav-link'}
+          style={currentPage === '/About' ? activeLinkStyle : linkStyle}
         >
           Work
         </Link>
@@ -39,6 +40,7 @@ function Navbar() {
         <Link
           to="/Contact"
           className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+          style={currentPage === '/About' ? activeLinkStyle : linkStyle}
         >
           Contact Me
         </Link>
@@ -47,6 +49,7 @@ function Navbar() {
         <Link
           to="/Resume"
           className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+          style={currentPage === '/About' ? activeLinkStyle : linkStyle}
         >
           Resume
         </Link>
