@@ -14,6 +14,8 @@ function Navbar() {
   };
 
   return (
+    <>
+    
     
     <ul className="nav navbar glow-text">
     
@@ -56,6 +58,19 @@ function Navbar() {
         </Link>
       </li>
     </ul>
+    <nav className="row navbar bg-body-tertiary">
+  <div className="col container  d-flex justify-content-center">
+    <a className="navbar-brand" href="https://github.com/CyndiCodes">
+      <img src={gitHubLogo} alt="" width="30" height="24"></img>
+    </a>
+    <div className="col container  d-flex justify-content-center">
+    <a className="navbar-brand" href="https://www.linkedin.com/in/cyndi-codes-090498288/">
+      <img src={linkedInLogo} alt="" width="30" height="24"></img>
+    </a>
+  </div>
+  </div>
+</nav>
+   </>
   );
 }
 
