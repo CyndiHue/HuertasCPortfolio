@@ -1,26 +1,48 @@
-export default function Contact() {
-    return (
-        <>
-        <form>
-        <div className="mb-3">
-          <label for="exampleInputEmail1" className="form-label">Name</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
-          <div id="emailHelp" className="form-text"></div>
-        </div>
-        <div className="mb-3">
-          <label for="exampleInputEmail1" className="form-label">Email address</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
-          <div id="emailHelp" className="form-text">Your email will never be shared with anyone else.</div>
-        </div>
-        <div className="mb-3">
-          <label for="exampleInputMessage1" className="form-label">Message</label>
-          <input type="Message" className="form-control" id="exampleInputMessage1"></input>
-        </div>
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
-        <button type="submit" className="btn btn-primary">Submit</button>
-      </form>
-        
-        
-        </>
-    );
+export default function ContactForm() {
+  const [state, handleSubmit] = useForm("mrgwrwon");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
   }
+  return (
+    <div className="card" style={{ marginTop: '20px' }}>
+  
+      <form onSubmit={handleSubmit} className="row">
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+        className="rounded-input"
+        
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <label htmlFor="message" className="row">
+        Message
+      </label>
+      <textarea
+        id="message"
+        name="message"
+        className="rounded-input"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting} className="rounded-button">
+        Submit
+      </button>
+    </form>
+    </div>
+  );
+}
+
