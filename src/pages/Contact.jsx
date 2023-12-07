@@ -9,7 +9,7 @@ export default function ContactForm() {
   return (
     <div className="card" style={{ marginTop: '20px' }}>
   
-      <form onSubmit={handleSubmit} className="row">
+      <form onSubmit={handleSubmit} className="row mt-4">
       <label htmlFor="email">
         Email Address
       </label>
