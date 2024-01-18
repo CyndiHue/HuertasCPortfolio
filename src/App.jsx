@@ -17,7 +17,7 @@ function App() {
         <Outlet />
         
       </main>
-      <Footer />
+      <Footer className=""/>
       
     </>
   )
